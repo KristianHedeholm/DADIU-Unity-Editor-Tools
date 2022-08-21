@@ -22,6 +22,7 @@ namespace Examples.CustomInspectors.CI1
     /*
      * Links:
      * CustomEditor: https://docs.unity3d.com/ScriptReference/CustomEditor.html
+     * OnInspectorGUI: https://docs.unity3d.com/ScriptReference/Editor.OnInspectorGUI.html
      * DrawDefaultInspector: https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html
      * EditorGUILayout.Space: https://docs.unity3d.com/ScriptReference/EditorGUILayout.Space.html
      * GUILayout.Button: https://docs.unity3d.com/ScriptReference/GUILayout.Button.html
