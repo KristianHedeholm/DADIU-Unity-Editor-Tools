@@ -10,7 +10,7 @@ namespace Examples.CustomInspectors.CI1
         {
             DrawDefaultInspector();
 
-            GUILayout.Space(5);
+            EditorGUILayout.Space(5);
 
             if(GUILayout.Button("Click Me"))
             {
@@ -18,4 +18,12 @@ namespace Examples.CustomInspectors.CI1
             }
         }
     }
+
+    /*
+     * Links:
+     * CustomEditor: https://docs.unity3d.com/ScriptReference/CustomEditor.html
+     * DrawDefaultInspector: https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html
+     * EditorGUILayout.Space: https://docs.unity3d.com/ScriptReference/EditorGUILayout.Space.html
+     * GUILayout.Button: https://docs.unity3d.com/ScriptReference/GUILayout.Button.html
+     */
 }
