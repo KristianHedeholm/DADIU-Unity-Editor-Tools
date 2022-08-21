@@ -32,4 +32,14 @@ namespace Examples.CustomInspectors.CI2
             EditorGUILayout.EndHorizontal();
         }
     }
+
+    /*
+     * Links:
+     * EditorGUILayout.BeginHorizontal: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginHorizontal.html
+     * EditorGUILayout.EndHorizontal: https://docs.unity3d.com/ScriptReference/EditorGUILayout.EndHorizontal.html
+     * 
+     * See also:
+     * EditorGUILayout.BeginVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginVertical.html
+     * EditorGUILayout.EndVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.EndVertical.html
+     */
 }
