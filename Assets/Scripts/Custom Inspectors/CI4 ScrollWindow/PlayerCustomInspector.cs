@@ -103,5 +103,9 @@ namespace Examples.CustomInspectors.CI4
      * SerializedProperty.InsertArrayElementAtIndex: https://docs.unity3d.com/ScriptReference/SerializedProperty.InsertArrayElementAtIndex.html
      * 
      * SerializedObject.ApplyModifiedProperties: https://docs.unity3d.com/ScriptReference/SerializedObject.ApplyModifiedProperties.html
+     * 
+     * See also:
+     * EditorGUILayout.BeginVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginVertical.html
+     * EditorGUILayout.EndVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.EndVertical.html
      */
 }
