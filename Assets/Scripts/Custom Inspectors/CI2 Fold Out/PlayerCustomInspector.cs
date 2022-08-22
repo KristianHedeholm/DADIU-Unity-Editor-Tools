@@ -2,7 +2,7 @@ namespace Examples.CustomInspectors.CI3
 {
     using UnityEditor;
 
-    [CustomEditor(typeof(Player))]
+    [CustomEditor(typeof(PlayerCI2))]
     public class PlayerCustomInspector : Editor
     {
         private SerializedProperty Health;

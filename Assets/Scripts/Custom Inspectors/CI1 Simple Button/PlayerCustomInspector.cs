@@ -3,7 +3,7 @@ namespace Examples.CustomInspectors.CI1
     using UnityEngine;
     using UnityEditor;
 
-    [CustomEditor(typeof(Player))]
+    [CustomEditor(typeof(PlayerCI1))]
     public class PlayerCustomInspector : Editor
     {
         public override void OnInspectorGUI()

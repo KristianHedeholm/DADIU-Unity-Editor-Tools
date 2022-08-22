@@ -2,7 +2,7 @@ namespace Examples.CustomInspectors.CI1
 {
     using UnityEngine;
 
-    public class Player : MonoBehaviour
+    public class PlayerCI1 : MonoBehaviour
     {
         public int health;
     }

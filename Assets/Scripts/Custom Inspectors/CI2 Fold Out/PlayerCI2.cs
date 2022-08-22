@@ -2,7 +2,7 @@ namespace Examples.CustomInspectors.CI3
 {
     using UnityEngine;
 
-    public class Player : MonoBehaviour
+    public class PlayerCI2 : MonoBehaviour
     {
         public int Health;
         [SerializeField]

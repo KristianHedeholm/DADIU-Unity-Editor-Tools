@@ -3,7 +3,7 @@ namespace Examples.CustomInspectors.CI4
     using UnityEngine;
     using UnityEditor;
 
-    [CustomEditor(typeof(Player))]
+    [CustomEditor(typeof(PlayerCI3))]
     public class PlayerCustomInspector : Editor
     {
         private SerializedProperty Inventory;

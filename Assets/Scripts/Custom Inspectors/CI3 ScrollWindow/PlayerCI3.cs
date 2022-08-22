@@ -11,7 +11,7 @@ namespace Examples.CustomInspectors.CI4
         public int Cost;
     }
 
-    public class Player : MonoBehaviour
+    public class PlayerCI3 : MonoBehaviour
     {
         public InventoryItem[] Inventory;
     }
