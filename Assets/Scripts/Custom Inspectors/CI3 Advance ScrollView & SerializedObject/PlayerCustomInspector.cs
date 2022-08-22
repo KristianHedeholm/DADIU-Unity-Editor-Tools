@@ -105,6 +105,8 @@ namespace Examples.CustomInspectors.CI3
      * SerializedObject.ApplyModifiedProperties: https://docs.unity3d.com/ScriptReference/SerializedObject.ApplyModifiedProperties.html
      * Editor.CreateEditor: https://docs.unity3d.com/ScriptReference/Editor.CreateEditor.html
      * 
+     * EditorGUILayout.HelpBox: https://docs.unity3d.com/ScriptReference/EditorGUILayout.HelpBox.html
+     * 
      * See also:
      * EditorGUILayout.BeginVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginVertical.html
      * EditorGUILayout.EndVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.EndVertical.html
