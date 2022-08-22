@@ -44,8 +44,10 @@ namespace Examples.CustomInspectors.CI3
      * Links:
      * SerializedObject: https://docs.unity3d.com/ScriptReference/SerializedObject.html
      * SerializedProperty: https://docs.unity3d.com/ScriptReference/SerializedProperty.html
+     * 
      * SerializedObject.FindProperty: https://docs.unity3d.com/ScriptReference/SerializedObject.FindProperty.html
      * EditorGUILayout.Foldout: https://docs.unity3d.com/ScriptReference/EditorGUILayout.Foldout.html
+     * 
      * EditorGUILayout.IntField: https://docs.unity3d.com/ScriptReference/EditorGUILayout.IntField.html
      * EditorGUILayout.PropertyField: https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html
      */
