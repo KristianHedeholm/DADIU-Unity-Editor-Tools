@@ -1,4 +1,4 @@
-namespace Examples.CustomInspectors.CI4
+namespace Examples.CustomInspectors.CI3
 {
     using UnityEngine;
     using System;

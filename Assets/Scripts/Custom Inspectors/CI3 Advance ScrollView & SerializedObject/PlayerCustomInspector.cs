@@ -1,4 +1,4 @@
-namespace Examples.CustomInspectors.CI4
+namespace Examples.CustomInspectors.CI3
 {
     using UnityEngine;
     using UnityEditor;
@@ -56,8 +56,6 @@ namespace Examples.CustomInspectors.CI4
             {
                 AddIventoryItem(Texture2D.whiteTexture, "this is a test", 9001);
             }
-
-            Inventory.serializedObject.ApplyModifiedProperties();
         }
 
         public void AddIventoryItem(Texture2D preview, string description, int cost)
@@ -79,6 +77,8 @@ namespace Examples.CustomInspectors.CI4
             previewSP.objectReferenceValue = inventoryItem.Preview;
             descriptionSP.stringValue = inventoryItem.Description;
             costSP.intValue = inventoryItem.Cost;
+
+            Inventory.serializedObject.ApplyModifiedProperties();
         }
     }
 

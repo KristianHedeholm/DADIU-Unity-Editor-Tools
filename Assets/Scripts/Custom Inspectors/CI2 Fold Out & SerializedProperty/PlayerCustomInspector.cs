@@ -1,4 +1,4 @@
-namespace Examples.CustomInspectors.CI3
+namespace Examples.CustomInspectors.CI2
 {
     using UnityEditor;
 
