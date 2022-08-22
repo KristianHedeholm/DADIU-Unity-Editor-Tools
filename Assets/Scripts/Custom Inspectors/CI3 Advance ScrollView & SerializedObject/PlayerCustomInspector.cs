@@ -103,6 +103,7 @@ namespace Examples.CustomInspectors.CI3
      * SerializedProperty.InsertArrayElementAtIndex: https://docs.unity3d.com/ScriptReference/SerializedProperty.InsertArrayElementAtIndex.html
      * 
      * SerializedObject.ApplyModifiedProperties: https://docs.unity3d.com/ScriptReference/SerializedObject.ApplyModifiedProperties.html
+     * Editor.CreateEditor: https://docs.unity3d.com/ScriptReference/Editor.CreateEditor.html
      * 
      * See also:
      * EditorGUILayout.BeginVertical: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginVertical.html
