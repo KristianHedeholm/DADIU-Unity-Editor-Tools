@@ -123,8 +123,6 @@ namespace Examples.CustomEditorExtensions.CEE3
             EditorGUILayout.LabelField(currentState);
         }
 
-        
-
         private void HighlightGameObject(int index)
         {
             EditorGUIUtility.PingObject(rareItems[index].gameObject);
