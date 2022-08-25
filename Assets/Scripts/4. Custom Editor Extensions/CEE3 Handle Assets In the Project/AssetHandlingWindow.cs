@@ -50,4 +50,16 @@ namespace Examples.CustomEditorExtensions.CEE2
             return gameObject;
         }
     }
+
+    /*
+    * Links
+    * EditorGUILayout.ObjectField: https://docs.unity3d.com/ScriptReference/EditorGUILayout.ObjectField.html
+    * AssetDatabase: https://docs.unity3d.com/ScriptReference/AssetDatabase.html
+    * 
+    * AssetDatabase.FindAssets: https://docs.unity3d.com/ScriptReference/AssetDatabase.FindAssets.html
+    * GUIDs in Unity: https://unityatscale.com/unity-meta-file-guide/understanding-meta-files-and-guids/ 
+    * 
+    * AssetDatabase.GUIDToAssetPath: https://docs.unity3d.com/ScriptReference/AssetDatabase.GUIDToAssetPath.html
+    * AssetDatabase.LoadAssetAtPath: https://docs.unity3d.com/ScriptReference/AssetDatabase.LoadAssetAtPath.html
+    */
 }
