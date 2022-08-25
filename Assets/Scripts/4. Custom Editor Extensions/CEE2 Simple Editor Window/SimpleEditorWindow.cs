@@ -20,7 +20,6 @@ namespace Examples.CustomEditorExtensions.CEE2
         }
     }
 
-    //EditorWindow.OnGUI()
     /*
     * Links
     * EditorWindow: https://docs.unity3d.com/2022.1/Documentation/ScriptReference/EditorWindow.html
