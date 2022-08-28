@@ -88,23 +88,24 @@ namespace Examples.CustomInspectors.CI3
      * EditorGUIUtility.labelWidth: https://docs.unity3d.com/ScriptReference/EditorGUIUtility-labelWidth.html
      * 
      * EditorGUILayout.BeginScrollView: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginScrollView.html
+     * EditorGUILayout.EndScrollView: https://docs.unity3d.com/ScriptReference/EditorGUILayout.EndScrollView.html
+     * 
      * GUILayout.Height: https://docs.unity3d.com/ScriptReference/GUILayout.Height.html
-     * 
      * SerializedProperty.arraySize: https://docs.unity3d.com/ScriptReference/SerializedProperty-arraySize.html
+     * 
      * SerializedProperty.GetArrayElementAtIndex: https://docs.unity3d.com/ScriptReference/SerializedProperty.GetArrayElementAtIndex.html
-     * 
      * SerializedProperty.FindPropertyRelative: https://docs.unity3d.com/ScriptReference/SerializedProperty.FindPropertyRelative.html
+     * 
      * EditorGUILayout.BeginHorizontal: https://docs.unity3d.com/ScriptReference/EditorGUILayout.BeginHorizontal.html
-     * 
      * EditorGUILayout.EndHorizontal: https://docs.unity3d.com/ScriptReference/EditorGUILayout.EndHorizontal.html
+     * 
      * SerializedProperty.objectReferenceValue: https://docs.unity3d.com/ScriptReference/SerializedProperty-objectReferenceValue.html
-     * 
      * GUILayout.Width: https://docs.unity3d.com/ScriptReference/GUILayout.Width.html
+     * 
      * SerializedProperty.InsertArrayElementAtIndex: https://docs.unity3d.com/ScriptReference/SerializedProperty.InsertArrayElementAtIndex.html
-     * 
      * SerializedObject.ApplyModifiedProperties: https://docs.unity3d.com/ScriptReference/SerializedObject.ApplyModifiedProperties.html
-     * Editor.CreateEditor: https://docs.unity3d.com/ScriptReference/Editor.CreateEditor.html
      * 
+     * Editor.CreateEditor: https://docs.unity3d.com/ScriptReference/Editor.CreateEditor.html
      * EditorGUILayout.HelpBox: https://docs.unity3d.com/ScriptReference/EditorGUILayout.HelpBox.html
      * 
      * See also:

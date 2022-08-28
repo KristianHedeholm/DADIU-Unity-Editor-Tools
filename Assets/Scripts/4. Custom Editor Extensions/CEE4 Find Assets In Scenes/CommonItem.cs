@@ -1,4 +1,4 @@
-namespace Examples.CustomEditorExtensions.CEE3
+namespace Examples.CustomEditorExtensions.CEE4
 {
     using UnityEngine;
 

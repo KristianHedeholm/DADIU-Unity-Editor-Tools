@@ -1,4 +1,4 @@
-namespace Examples.CustomEditorExtensions.CEE3
+namespace Examples.CustomEditorExtensions.CEE4
 {
     using UnityEngine;
     using UnityEditor;
@@ -129,4 +129,16 @@ namespace Examples.CustomEditorExtensions.CEE3
             Selection.activeObject = rareItems[index].gameObject;
         }
     }
+
+    /*
+    * Links
+    * Path.GetFileNameWithoutExtension: https://docs.microsoft.com/en-us/dotnet/api/system.io.path.getfilenamewithoutextension?view=net-6.0
+    * EditorApplication.playModeStateChanged: https://docs.unity3d.com/ScriptReference/EditorApplication-playModeStateChanged.html
+    * 
+    * EditorApplication.isPlaying: https://docs.unity3d.com/ScriptReference/EditorApplication-isPlaying.html
+    * EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo: https://docs.unity3d.com/ScriptReference/SceneManagement.EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo.html
+    * 
+    * EditorSceneManager.OpenScene: https://docs.unity3d.com/ScriptReference/SceneManagement.EditorSceneManager.OpenScene.html
+    * EditorGUIUtility.PingObject: https://docs.unity3d.com/ScriptReference/EditorGUIUtility.PingObject.html
+    */
 }

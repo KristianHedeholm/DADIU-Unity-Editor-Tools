@@ -29,5 +29,6 @@ namespace Examples.CustomEditorExtensions.CEE1
     * Links
     * MenuItem: https://docs.unity3d.com/ScriptReference/MenuItem.html
     * Selection: https://docs.unity3d.com/ScriptReference/Selection.html
+    * Selection.activeObject: https://docs.unity3d.com/ScriptReference/Selection-activeObject.html
     */
 }
