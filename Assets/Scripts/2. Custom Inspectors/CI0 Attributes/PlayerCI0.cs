@@ -1,4 +1,4 @@
-namespace Examples.Attributes.A1
+namespace Examples.CustomInspectors.CI0
 {
     using UnityEngine;
 
@@ -6,7 +6,7 @@ namespace Examples.Attributes.A1
     // You can read more about it here: https://forum.unity.com/threads/undocumented-but-public-defaultexecutionorder-attribute.530618/
 
     [DefaultExecutionOrder(-200)]
-    public class Player : MonoBehaviour
+    public class PlayerCI0 : MonoBehaviour
     {
 
     }
