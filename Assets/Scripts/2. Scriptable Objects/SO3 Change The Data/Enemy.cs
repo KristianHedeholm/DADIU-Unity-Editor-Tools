@@ -19,7 +19,7 @@ namespace Examples.ScriptableObjects.SO3
             healthData.TakeDamage(damage);
             if(!healthData.IsAlive)
             {
-                Debug.Log("Oh No I'm dead!");
+                Debug.Log("Oh No I'm a dead enemy!");
             }
         }
     }
