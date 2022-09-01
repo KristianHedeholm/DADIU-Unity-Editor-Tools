@@ -4,6 +4,6 @@ namespace Examples.ScriptableObjects.SO4
 
     public class SaveableScriptableObject : ScriptableObject
     {
-        public int IntValue;
+        public int Number;
     }
 }

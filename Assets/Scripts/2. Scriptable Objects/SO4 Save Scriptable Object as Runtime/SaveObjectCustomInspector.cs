@@ -14,11 +14,8 @@ namespace Examples.ScriptableObjects.SO4
 
         private List<string> scriptableObjectNames = new List<string>();
 
-        private SerializedProperty intValue;
-
         private void OnEnable()
         {
-            intValue = serializedObject.FindProperty("intValue");
             UpdateListOfAssetNames();
         }
 
@@ -28,9 +25,9 @@ namespace Examples.ScriptableObjects.SO4
 
             EditorGUILayout.Space(5);
 
-            if(GUILayout.Button("Save Int Value To Scritable Object"))
+            if(GUILayout.Button("Save Random Value To Scritable Object"))
             {
-                SaveValueToScriptableObject();
+                SaveRandomValueToScriptableObject();
             }
         }
 
@@ -46,10 +43,10 @@ namespace Examples.ScriptableObjects.SO4
             }
         }
 
-        private void SaveValueToScriptableObject()
+        private void SaveRandomValueToScriptableObject()
         {
             SaveableScriptableObject cameraDataScriptableObject = ScriptableObject.CreateInstance<SaveableScriptableObject>();
-            cameraDataScriptableObject.IntValue = intValue.intValue;
+            cameraDataScriptableObject.Number = Random.Range(0, 11);
 
             string uniqueFilename = ObjectNames.GetUniqueName(scriptableObjectNames.ToArray(), scriptableObjectDefaultName);
             AssetDatabase.CreateAsset(cameraDataScriptableObject, $"{scriptableObjectsFolderPath}{uniqueFilename}{scritableObjectExtension}");

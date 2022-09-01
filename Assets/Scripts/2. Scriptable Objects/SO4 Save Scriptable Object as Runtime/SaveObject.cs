@@ -4,7 +4,6 @@ namespace Examples.ScriptableObjects.SO4
 
     public class SaveObject : MonoBehaviour
     {
-        [SerializeField]
-        private int intValue;
+
     }
 }
