@@ -53,4 +53,16 @@ namespace Examples.ScriptableObjects.SO4
             scriptableObjectNames.Add(uniqueFilename);
         }
     }
+
+    /*
+     * Links:
+     * AssetDatabase.FindAssets: https://docs.unity3d.com/ScriptReference/AssetDatabase.FindAssets.html
+     * GUIDs in Unity: https://unityatscale.com/unity-meta-file-guide/understanding-meta-files-and-guids/
+     * 
+     * AssetDatabase.GUIDToAssetPath: https://docs.unity3d.com/ScriptReference/AssetDatabase.GUIDToAssetPath.html
+     * Path.GetFileNameWithoutExtension: https://docs.microsoft.com/en-us/dotnet/api/system.io.path.getfilenamewithoutextension?view=net-6.0
+     * 
+     * ObjectNames.GetUniqueName: https://docs.unity3d.com/ScriptReference/ObjectNames.GetUniqueName.html
+     * AssetDatabase.CreateAsset: https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html
+     */
 }

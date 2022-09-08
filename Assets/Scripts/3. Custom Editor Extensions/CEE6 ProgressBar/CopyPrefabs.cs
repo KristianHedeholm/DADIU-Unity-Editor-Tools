@@ -39,4 +39,16 @@ namespace Examples.CustomEditorExtensions.CEE6
         }
 
     }
+
+    /*
+     * Links:
+     * AssetDatabase.IsValidFolder: https://docs.unity3d.com/ScriptReference/AssetDatabase.IsValidFolder.html
+     * AssetDatabase.CreateFolder: https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateFolder.html
+     * 
+     * FileUtil.CopyFileOrDirectory: https://docs.unity3d.com/ScriptReference/FileUtil.CopyFileOrDirectory.html
+     * EditorUtility.DisplayProgressBar: https://docs.unity3d.com/ScriptReference/EditorUtility.DisplayProgressBar.html
+     * 
+     * AssetDatabase.Refresh: https://docs.unity3d.com/ScriptReference/AssetDatabase.Refresh.html
+     * EditorUtility.ClearProgressBar: https://docs.unity3d.com/ScriptReference/EditorUtility.ClearProgressBar.html
+     */
 }

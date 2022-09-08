@@ -12,4 +12,10 @@ namespace Examples.ScriptableObjects.SO1
         [SerializeField]
         private bool boolValue;
     }
+
+    /*
+     * Links:
+     * CreateAssetMenu: https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html
+     * ScriptableObject: https://docs.unity3d.com/ScriptReference/ScriptableObject.html
+     */
 }
