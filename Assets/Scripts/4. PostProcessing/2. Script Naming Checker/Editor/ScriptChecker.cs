@@ -1,9 +1,9 @@
-namespace Examples.Postprocessing.PP1
+namespace Examples.Postprocessing.PP2
 {
     using UnityEditor;
     using System.IO;
 
-    public class ScriptImporter : AssetPostprocessor
+    public class ScriptChecker : AssetPostprocessor
     {
         private const string cSharpExtension = ".cs";
         private const string scriptPath = "Assets/Scripts";
@@ -27,7 +27,7 @@ namespace Examples.Postprocessing.PP1
                     if (!importedAsst.Contains(scriptPath) || !startWithUpperCaseLetter)
                     {
                         string newPath = $@"{scriptPath}/{filename}";
-                        AssetDatabase.MoveAsset(monoImporter.assetPath, newPath);
+                        AssetDatabase.MoveAsset(monoImporter.assetPath, newPath); 
                     }
                 }
             }
