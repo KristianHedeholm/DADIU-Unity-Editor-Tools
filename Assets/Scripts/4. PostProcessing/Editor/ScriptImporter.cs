@@ -19,11 +19,23 @@ namespace Examples.Postprocessing.PP1
                     {
                         MonoImporter monoImporter = AssetImporter.GetAtPath(importedAsst) as MonoImporter;
                         string filename = Path.GetFileName(monoImporter.assetPath);
+
+                        bool startWithUpperCaseLetter = char.IsUpper(filename[0]);
+                        if(!startWithUpperCaseLetter)
+                        {
+                            filename = ForceFirstLetterToUpperCase(filename);
+                        }
+
                         string newPath = $@"{scriptPath}/{filename}";
                         AssetDatabase.MoveAsset(monoImporter.assetPath, newPath);
                     }
                 }
             }
+        }
+
+        private static string ForceFirstLetterToUpperCase(string inputValue)
+        {
+            return char.ToUpper(inputValue[0]) + inputValue.Substring(1);
         }
     }
 }
