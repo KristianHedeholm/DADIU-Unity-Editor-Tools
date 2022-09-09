@@ -10,7 +10,6 @@ namespace Examples.Postprocessing.PP1
             Debug.Log("Called Before Processing an asset");
         }
 
-
         private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths, bool didDomainReload)
         {
             Debug.Log("Called After Processing an asset");
