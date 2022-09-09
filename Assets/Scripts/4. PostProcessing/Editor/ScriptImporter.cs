@@ -15,17 +15,17 @@ namespace Examples.Postprocessing.PP1
                 string fileExtension = Path.GetExtension(importedAsst);
                 if (fileExtension.Equals(cSharpExtension))
                 {
-                    if (!importedAsst.Contains(scriptPath))
+                    MonoImporter monoImporter = AssetImporter.GetAtPath(importedAsst) as MonoImporter;
+                    string filename = Path.GetFileName(monoImporter.assetPath);
+
+                    bool startWithUpperCaseLetter = char.IsUpper(filename[0]);
+                    if (!startWithUpperCaseLetter)
                     {
-                        MonoImporter monoImporter = AssetImporter.GetAtPath(importedAsst) as MonoImporter;
-                        string filename = Path.GetFileName(monoImporter.assetPath);
+                        filename = ForceFirstLetterToUpperCase(filename);
+                    }
 
-                        bool startWithUpperCaseLetter = char.IsUpper(filename[0]);
-                        if(!startWithUpperCaseLetter)
-                        {
-                            filename = ForceFirstLetterToUpperCase(filename);
-                        }
-
+                    if (!importedAsst.Contains(scriptPath) || !startWithUpperCaseLetter)
+                    {
                         string newPath = $@"{scriptPath}/{filename}";
                         AssetDatabase.MoveAsset(monoImporter.assetPath, newPath);
                     }
