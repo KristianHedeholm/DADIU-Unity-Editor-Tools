@@ -9,7 +9,7 @@ namespace Examples.ScriptableObjects.SO2
         Demon,
     }
 
-    public class Enemy : MonoBehaviour
+    public class EnemySO2 : MonoBehaviour
     {
         private EnemyType enemyType;
         private int attackPower;
