@@ -2,9 +2,9 @@ namespace Examples.ScriptableObjects.SO3
 {
     using UnityEngine;
 
-    public class Enemy : MonoBehaviour
+    public class EnemySO3 : MonoBehaviour
     {
-        public static Enemy Instance;
+        public static EnemySO3 Instance;
 
         [SerializeField]
         private HealthDataScriptableObject healthData;

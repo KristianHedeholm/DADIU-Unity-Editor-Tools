@@ -2,7 +2,7 @@ namespace Examples.ScriptableObjects.SO3
 {
     using UnityEngine;
 
-    public class Player : MonoBehaviour
+    public class PlayerSO3 : MonoBehaviour
     {
         [SerializeField]
         private HealthDataScriptableObject healthData;
@@ -12,7 +12,7 @@ namespace Examples.ScriptableObjects.SO3
             if(Input.GetKeyDown(KeyCode.A))
             {
                 Debug.Log("Attack the enemy!");
-                Enemy.Instance.AttackEnemy(1);
+                EnemySO3.Instance.AttackEnemy(1);
             }
 
             if(Input.GetKeyDown(KeyCode.D))
