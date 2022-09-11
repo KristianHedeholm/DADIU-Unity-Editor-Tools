@@ -38,4 +38,12 @@ namespace Examples.Postprocessing.PP1
             }
         }
     }
+
+    /*
+     * Links:
+     * AssetPostprocessor: https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html
+     * OnPreprocessAsset: https://docs.unity3d.com/ScriptReference/AssetPostprocessor.OnPreprocessAsset.html
+     * 
+     * OnPostprocessAllAssets: https://docs.unity3d.com/ScriptReference/AssetPostprocessor.OnPostprocessAllAssets.html
+     */
 }

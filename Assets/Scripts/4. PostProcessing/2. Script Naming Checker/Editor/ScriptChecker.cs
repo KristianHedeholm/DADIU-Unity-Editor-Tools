@@ -42,4 +42,16 @@ namespace Examples.Postprocessing.PP2
             return char.ToUpper(inputValue[0]) + inputValue.Substring(1);
         }
     }
+
+    /*
+     * Links:
+     * Path.GetExtension: https://docs.microsoft.com/en-us/dotnet/api/system.io.path.getextension?view=net-6.0
+     * MonoImporter: https://docs.unity3d.com/ScriptReference/MonoImporter.html
+     * 
+     * AssetImporter.GetAtPath: https://docs.unity3d.com/ScriptReference/AssetImporter.GetAtPath.html
+     * File.ReadAllText: https://docs.microsoft.com/en-us/dotnet/api/system.io.file.readalltext?view=net-6.0
+     * 
+     * File.WriteAllText: https://docs.microsoft.com/en-us/dotnet/api/system.io.file.writealltext?view=net-6.0
+     * AssetDatabase.MoveAsset: https://docs.unity3d.com/ScriptReference/AssetDatabase.MoveAsset.html
+     */
 }
