@@ -37,4 +37,16 @@ namespace Examples.Postprocessing.PP3
             monoImporter.SaveAndReimport();
         }
     }
+
+    /*
+     * Link:
+     * OnPreprocessAsset:  https://docs.unity3d.com/ScriptReference/AssetPostprocessor.OnPreprocessAsset.html
+     * AssetPostprocessor.assetImporter: https://docs.unity3d.com/ScriptReference/AssetPostprocessor-assetImporter.html
+     * 
+     * MonoImporter: https://docs.unity3d.com/ScriptReference/MonoImporter.html
+     * MonoImporter.SetIcon: https://docs.unity3d.com/ScriptReference/MonoImporter.SetIcon.html
+     * 
+     * AssetImporter.SaveAndReimport: https://docs.unity3d.com/ScriptReference/AssetImporter.SaveAndReimport.html
+     * Check out: https://github.com/halak/unity-editor-icons
+     */
 }
