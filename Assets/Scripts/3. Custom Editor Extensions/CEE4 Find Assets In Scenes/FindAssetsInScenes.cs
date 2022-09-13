@@ -10,7 +10,7 @@ namespace Examples.CustomEditorExtensions.CEE4
     {
         private const string sceneSearchFilter = " t:scene";
         private readonly string[] sceneSearchFolder
-            = new string[] { "Assets/Scripts/4. Custom Editor Extensions/CEE4 Find Assets In Scenes/Scenes" };
+            = new string[] { "Assets/Scripts/3. Custom Editor Extensions/CEE4 Find Assets In Scenes/Scenes" };
 
         private Dictionary<string, string> scenes = new Dictionary<string, string>();
 

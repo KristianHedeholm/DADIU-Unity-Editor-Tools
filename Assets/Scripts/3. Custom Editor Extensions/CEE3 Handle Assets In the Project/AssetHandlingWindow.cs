@@ -7,7 +7,7 @@ namespace Examples.CustomEditorExtensions.CEE3
     {
         private const string prefabSearchFilter = " t:gameobject";
         private readonly string[] prefabSearchFolder 
-            = new string[] { "Assets/Scripts/4. Custom Editor Extensions/CEE3 Handle Assets In the Project/Prefabs" };
+            = new string[] { "Assets/Scripts/3. Custom Editor Extensions/CEE3 Handle Assets In the Project/Prefabs" };
 
         private GameObject selectedGameOBject;
 

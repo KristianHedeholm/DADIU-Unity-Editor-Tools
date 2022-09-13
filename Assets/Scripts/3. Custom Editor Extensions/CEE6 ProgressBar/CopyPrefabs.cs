@@ -6,7 +6,7 @@ namespace Examples.CustomEditorExtensions.CEE6
 
     public static class CopyPrefabs 
     {
-        private const string parentPath = "Assets/Scripts/4. Custom Editor Extensions/CEE6 ProgressBar";
+        private const string parentPath = "Assets/Scripts/3. Custom Editor Extensions/CEE6 ProgressBar";
         private const string newPrefabFolderName = "NewPrefabs";
 
         [MenuItem("Tools/Menu Item Copy Prefabs")]
