@@ -17,9 +17,20 @@ public struct ItemData
     public int ID;
     public string Tags;
     public int Price;
+    public WeaponType WeaponType;
     public Stats Stats;
     public Reward Reward;
     public Sprite Sprite;
+}
+
+public enum WeaponType
+{
+    None,
+    Sword,
+    Spear,
+    Axe,
+    Bow,
+    Throwable,
 }
 
 [Serializable]
