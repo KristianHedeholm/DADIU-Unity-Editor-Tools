@@ -29,7 +29,6 @@ public enum WeaponType
     Sword,
     Spear,
     Axe,
-    Bow,
     Throwable,
 }
 
@@ -39,11 +38,12 @@ public struct Stats
     public int Attack;
     public int Defence;
     public int Speed;
+    public int Magic;
 }
 
 [Serializable]
 public struct Reward
 {
     public int Coins;
-    public int IDForItem;
+    public string IDsForItem;
 }
