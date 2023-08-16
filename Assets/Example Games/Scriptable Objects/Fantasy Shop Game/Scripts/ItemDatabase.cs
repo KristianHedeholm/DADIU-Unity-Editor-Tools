@@ -50,13 +50,13 @@ public class ItemDatabase : ScriptableObject
                     var endOfTagString = false;
                     while (!endOfTagString)
                     {
+                        addedIndex++;
                         tags += values[addedIndex];
                         if (tags.EndsWith('"'))
                         {
                             endOfTagString = true;
                             break;
                         }
-                        addedIndex++;
                     }
                 }
                 itemData.Tags = tags;
@@ -79,11 +79,15 @@ public class ItemDatabase : ScriptableObject
                 var sprite = AssetDatabase.LoadAssetAtPath(spritePath, typeof(Sprite)) as Sprite;
                 itemData.Sprite = sprite;
 
-                Reward reward = new Reward()
+                Reward reward = new Reward();
+                reward.Coins = Convert.ToInt32(values[addedIndex + 8]);
+
+                var numberOfValues = values.Length;
+                var currentIndex = addedIndex + 9;
+                for (int index = currentIndex; index < numberOfValues; index++)
                 {
-                    Coins = Convert.ToInt32(values[addedIndex + 8]),
-                    IDsForItem = values[addedIndex + 9]
-                };
+                    reward.IDsForItem += values[index];
+                }
 
                 itemData.Stats = stats;
                 itemData.Reward = reward;
