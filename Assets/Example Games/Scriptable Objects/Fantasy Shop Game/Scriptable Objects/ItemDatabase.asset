@@ -12,4 +12,1488 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3d5948af46b5a4281a249f3fcb6d3a, type: 3}
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
-  _items: []
+  _items:
+  - Name: Dogs Best Friend
+    ID: 1
+    Tags: '"Bone Resource"'
+    Price: 100
+    WeaponType: 0
+    Stats:
+      Attack: 2
+      Defence: 1
+      Speed: 1
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 10f7bd8361efe35438689f3adfe79f8a, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Blood Bone
+    ID: 2
+    Tags: '"Bone Resource"'
+    Price: 500
+    WeaponType: 0
+    Stats:
+      Attack: 6
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ece7e4cc48d5746409631eb6bd54c5a4, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Double Bones
+    ID: 3
+    Tags: '"Bone Resource"'
+    Price: 1000
+    WeaponType: 0
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 94259d93cd9feab42b3f2654f9444aa7, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Normal Chest
+    ID: 4
+    Tags: '"Chest"'
+    Price: 10000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c537f28a3760fdd4fa73cab084a6e549, type: 3}
+    Reward:
+      Coins: 500
+      IDsForItem: '"2 3 15 27 31 39 44 59 60 61 68 70 72"'
+  - Name: Magic Chest
+    ID: 5
+    Tags: '"Chest Magic"'
+    Price: 35000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 586a84105b86f214585ad20f8a6ed268, type: 3}
+    Reward:
+      Coins: 5000
+      IDsForItem: '"15 31 39 55 66 69 86 87 88 94 97"'
+  - Name: Metal Chest
+    ID: 6
+    Tags: '"Chest"'
+    Price: 50000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ebcd17d6199a2b6418b5cd31c7fd89cb, type: 3}
+    Reward:
+      Coins: 20000
+      IDsForItem: '"103 104 105"'
+  - Name: Kinslayer
+    ID: 7
+    Tags: 
+    Price: 1000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 2
+      Speed: 1
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 43d8185cd596c824a8a5d28c1b376028, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Grieving Blade
+    ID: 8
+    Tags: 
+    Price: 1500
+    WeaponType: 1
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 62e3ccc144dd1004ebe147e89ec4227a, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Valkyrie
+    ID: 9
+    Tags: 
+    Price: 3000
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 5a33ded9c27546841961da58e031ba42, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Venomshank
+    ID: 10
+    Tags: 
+    Price: 4000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: fe36f5d3d77d85c4993f81398deaecd0, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Ritual Sabre
+    ID: 11
+    Tags: 
+    Price: 5000
+    WeaponType: 1
+    Stats:
+      Attack: 7
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 98c9f78a900a1894494ff2db17bd332f, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Lightbringer
+    ID: 12
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 1f3607d19fd613044be2bf67e4e2b6b0, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Needle
+    ID: 13
+    Tags: 
+    Price: 7500
+    WeaponType: 1
+    Stats:
+      Attack: 8
+      Defence: 8
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: d6c6cea00f6ef704a87433807f2dfe74, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Silent Doomblade
+    ID: 14
+    Tags: 
+    Price: 4500
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 4ec61e7d4c49d96418d3aa08a257b44e, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Pride's Blade
+    ID: 15
+    Tags: '"Magic"'
+    Price: 10000
+    WeaponType: 1
+    Stats:
+      Attack: 8
+      Defence: 7
+      Speed: -5
+      Magic: 10
+    Sprite: {fileID: 21300000, guid: 425dbd7bb04e1ab45bc66b34430398f6, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Silent Skeletal Etcher
+    ID: 16
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 4
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 4e4ad30b76d0ed74799f3eea00a9ed98, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Eternal Broadsword
+    ID: 17
+    Tags: 
+    Price: 5500
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 8b48e6913c107b74e80839f76c6645d6, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Fireguard Defender
+    ID: 18
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 2
+      Speed: 1
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 6e20cb7398854894598e922d8aa1bbac, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Eternal Harmony
+    ID: 19
+    Tags: 
+    Price: 7000
+    WeaponType: 1
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ba2e299e3244bb14a817aca0ad86258b, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Silent Reaver
+    ID: 20
+    Tags: '"Legendary"'
+    Price: 50000
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 025f297d5fc3b464191013e2c607ae39, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Agatha
+    ID: 21
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 95489d77103d1484fb61e33fc6a0fa36, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Perfect Storm
+    ID: 22
+    Tags: 
+    Price: 7000
+    WeaponType: 1
+    Stats:
+      Attack: 7
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c270ebf76d2f54e4b882840fd0186ce4, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Godslayer
+    ID: 23
+    Tags: 
+    Price: 15000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 68c25fb10c32fde4ca8ce2d66ad4101f, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Ghostwalker
+    ID: 24
+    Tags: 
+    Price: 5500
+    WeaponType: 1
+    Stats:
+      Attack: 8
+      Defence: 8
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 23aec46d406dcd94cb09d15c801e2699, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Skyfall Blade
+    ID: 25
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 76d69582811165d47b3d0bc2cd449bb7, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Toothpick
+    ID: 26
+    Tags: 
+    Price: 7000
+    WeaponType: 1
+    Stats:
+      Attack: 8
+      Defence: 7
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 0b41ee5996ff00a42a0ae9c5e9b97175, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Lightning Warblade of Lost Comrade
+    ID: 27
+    Tags: '"Legendary"'
+    Price: 100000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 4
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 38cc5969cbb8ca44582e20a7e6273de3, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Vindictive Razor
+    ID: 28
+    Tags: 
+    Price: 5000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 0f63f7ecb6537354f9ce1e95dc81f69f, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Eerie Doomblade
+    ID: 29
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 8d604b70d4f90ac4ea4f7183e7f8d31c, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Anduril
+    ID: 30
+    Tags: 
+    Price: 7500
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: cdba7430ba297204ea52ee5438a90570, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Blackout
+    ID: 31
+    Tags: '"Magic"'
+    Price: 4500
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: 5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 0d9823f9614b05041b2bbc472da377f0, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Misfortune's Blade
+    ID: 32
+    Tags: 
+    Price: 10000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 2
+      Speed: 1
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: a8bf46d86e290a84885ec75c6f8db13e, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Soulblade
+    ID: 33
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: d5840815932fbe848b3f8a1284ce58ec, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Bloodweep
+    ID: 34
+    Tags: 
+    Price: 5500
+    WeaponType: 1
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 8bb44e1d1736d4e47a43549a08f2538a, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Early Retirement
+    ID: 35
+    Tags: 
+    Price: 6000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: a34659e035b525e4390368273c31911d, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Narcoleptic
+    ID: 36
+    Tags: 
+    Price: 7000
+    WeaponType: 1
+    Stats:
+      Attack: 7
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ddadc30ece3a45b44bc6e25768d08a62, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: King's Legacy
+    ID: 37
+    Tags: 
+    Price: 6000
+    WeaponType: 3
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: 5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c23fbdcdfa4ca474eab86a1295c7adc0, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Defender of Kuopio
+    ID: 38
+    Tags: 
+    Price: 7000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 3ede1e3574b7f184683c792817c5512a, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Lazarus
+    ID: 39
+    Tags: '"Magic"'
+    Price: 25000
+    WeaponType: 3
+    Stats:
+      Attack: 6
+      Defence: 3
+      Speed: -2
+      Magic: 7
+    Sprite: {fileID: 21300000, guid: 21111f73d7cebc4479fdbc23bf4eccd7, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Apocalypse
+    ID: 40
+    Tags: 
+    Price: 6000
+    WeaponType: 2
+    Stats:
+      Attack: 8
+      Defence: 8
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 92105fb275bf3d4409412f7b0ad197a2, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Trickster's Edge
+    ID: 41
+    Tags: 
+    Price: 7500
+    WeaponType: 2
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 725f7ad6da876344e809c623f0c15aac, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Link's Arrow
+    ID: 42
+    Tags: 
+    Price: 10000
+    WeaponType: 4
+    Stats:
+      Attack: 8
+      Defence: 7
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: b817f790248d73a40bb049b15e51b40b, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Ragnarok
+    ID: 43
+    Tags: 
+    Price: 5000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 4
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 4c51baeec770145448f5007bbb917473, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Stick of Truth
+    ID: 44
+    Tags: 
+    Price: 5000
+    WeaponType: 2
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 34eef6b3de5ee15439ac2227c6d42f21, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Heartless Chopper
+    ID: 45
+    Tags: '"Legendary"'
+    Price: 85000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 2
+      Speed: 1
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: cc7020edd4247c746882998f84ce7327, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Due Diligence The Deflector of Mountain
+    ID: 46
+    Tags: '"Legendary"'
+    Price: 75000
+    WeaponType: 1
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: f7ab55d500f2aa4408fddf25ed90bc53, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Nightbane
+    ID: 47
+    Tags: 
+    Price: 5000
+    WeaponType: 3
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 8fcfb810fe3c8ff489479140e5ffaee8, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Protector of Espoo
+    ID: 48
+    Tags: 
+    Price: 6000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 8ba71577bcad17247b5177f493f1ef08, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Hammer Time
+    ID: 49
+    Tags: 
+    Price: 7500
+    WeaponType: 4
+    Stats:
+      Attack: 7
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 15bdace66b3e87649a0a7d7883827ca7, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Twilight's Crescent
+    ID: 50
+    Tags: 
+    Price: 4500
+    WeaponType: 3
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 7740bed706a8f5949bdfdb1a04c276e8, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Infinity
+    ID: 51
+    Tags: 
+    Price: 10000
+    WeaponType: 2
+    Stats:
+      Attack: 8
+      Defence: 8
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 12aef959c5e49914e99c2d3babe2f851, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Holy Bronze Dualblade
+    ID: 52
+    Tags: 
+    Price: 6000
+    WeaponType: 3
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c514e08f381dcb544897db61da052c8e, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Blind Justice
+    ID: 53
+    Tags: 
+    Price: 5500
+    WeaponType: 1
+    Stats:
+      Attack: 8
+      Defence: 7
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: e56470d9cac9c7648b0b5f3e583d5f05, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Twins of Doom
+    ID: 54
+    Tags: 
+    Price: 6000
+    WeaponType: 4
+    Stats:
+      Attack: 3
+      Defence: 4
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: cc5e62d19569ae44fab3d8e5f3f06d78, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Morbid Doom
+    ID: 55
+    Tags: '"Magic"'
+    Price: 7000
+    WeaponType: 1
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: bacc8743820ddef4eb7d7460e4c82a2e, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Metal Ring
+    ID: 56
+    Tags: '"Resource"'
+    Price: 5000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 4b523a89e3eff4544887f6e90d4c6ecc, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Echo
+    ID: 57
+    Tags: 
+    Price: 6000
+    WeaponType: 3
+    Stats:
+      Attack: 6
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: accad3f35e30fc346b6b76e621ee1832, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Blazeguard
+    ID: 58
+    Tags: 
+    Price: 7500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: b9adeae820a5beb45834d1668ac7b7bc, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Morning Star
+    ID: 58
+    Tags: 
+    Price: 4500
+    WeaponType: 3
+    Stats:
+      Attack: 3
+      Defence: 2
+      Speed: 1
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: bc0e1412ce0069f4a85bf3bd65d06692, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Death's Favourite
+    ID: 59
+    Tags: 
+    Price: 5000
+    WeaponType: 2
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 657d0cc883e97fa43a67c560ae4a68ec, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Ash
+    ID: 60
+    Tags: 
+    Price: 0
+    WeaponType: 2
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: f047a4da186aa924d9565d834d578bc6, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Night star
+    ID: 62
+    Tags: 
+    Price: 3000
+    WeaponType: 4
+    Stats:
+      Attack: 6
+      Defence: 6
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: d6f92f10eff1efa45bdff2104953fa07, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Metal Pot Lid
+    ID: 63
+    Tags: '"Resource"'
+    Price: 20
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 8678b3a63efb6c04382abe48605ca485, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: High Thoughts Protecter
+    ID: 64
+    Tags: 
+    Price: 8500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 26694cb0ae667ed438cd3131305b5c23, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Soulrapier
+    ID: 65
+    Tags: 
+    Price: 1000
+    WeaponType: 1
+    Stats:
+      Attack: 3
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 17b6169fc1bdd5b4490d35d923b87132, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Ring of the Lords
+    ID: 66
+    Tags: '"Magic"'
+    Price: 150000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 10
+    Sprite: {fileID: 21300000, guid: 3afa06f8b731c47418617bb611471622, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Scar
+    ID: 67
+    Tags: 
+    Price: 15000
+    WeaponType: 3
+    Stats:
+      Attack: 4
+      Defence: 3
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: cbc2366d8f9af0840854ccd37b782da7, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Firesoul Warden
+    ID: 68
+    Tags: 
+    Price: 3000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ec24f720cf03307419a54f53b2cd7a28, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Orenmir
+    ID: 69
+    Tags: '"Magic"'
+    Price: 50000
+    WeaponType: 4
+    Stats:
+      Attack: 7
+      Defence: 3
+      Speed: 2
+      Magic: 7
+    Sprite: {fileID: 21300000, guid: 0e575141fc01f894784f6f110b43defd, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Rising Tide
+    ID: 70
+    Tags: 
+    Price: 4500
+    WeaponType: 2
+    Stats:
+      Attack: 5
+      Defence: 3
+      Speed: -2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: fa228574d92c0d4499195313166ce8ca, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Twin Sticks
+    ID: 71
+    Tags: 
+    Price: 10000
+    WeaponType: 4
+    Stats:
+      Attack: 8
+      Defence: 7
+      Speed: -5
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 6cef2d9663b30d6418b6eccbc30d8379, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Eye of the Tiger
+    ID: 72
+    Tags: 
+    Price: 6000
+    WeaponType: 4
+    Stats:
+      Attack: 3
+      Defence: 4
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ac95c052288d0e14a936e098d28e82c9, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Childhood
+    ID: 73
+    Tags: 
+    Price: 5500
+    WeaponType: 4
+    Stats:
+      Attack: 6
+      Defence: 7
+      Speed: -6
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: cbdabb6e752efac4a97930a3e7d561b7, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Bobas Life Saver
+    ID: 74
+    Tags: 
+    Price: 6000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 10
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 08f9d058d18b4bb47bc565d7986d3445, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Tools
+    ID: 75
+    Tags: '"Resource"'
+    Price: 1000
+    WeaponType: 0
+    Stats:
+      Attack: 2
+      Defence: 3
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 87154c705866aa043a292d9b70312be9, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Book
+    ID: 76
+    Tags: '"Paper"'
+    Price: 500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 425f26dff6fd6ea4f862636ab5dadf98, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Saw
+    ID: 77
+    Tags: 
+    Price: 1000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 9e205b4d78cd51246bf43e80483e79be, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Stone Shield
+    ID: 78
+    Tags: 
+    Price: 7500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: bcabf24cea5ab3c4daacd127478e30ad, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Dawnbreaker
+    ID: 79
+    Tags: 
+    Price: 8000
+    WeaponType: 4
+    Stats:
+      Attack: 6
+      Defence: 5
+      Speed: 3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c83243071ad9daa4ca0e00a4f3e2a10d, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Stone
+    ID: 80
+    Tags: '"Resource"'
+    Price: 3000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 83b96354caa670143b648806742534bc, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Skrewdriver
+    ID: 81
+    Tags: '"Resource"'
+    Price: 1000
+    WeaponType: 0
+    Stats:
+      Attack: 3
+      Defence: 1
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: f4641f02c40d9c54a8838c9fcaba3230, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Night Star
+    ID: 82
+    Tags: 
+    Price: 5000
+    WeaponType: 4
+    Stats:
+      Attack: 3
+      Defence: 0
+      Speed: 8
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 7450cbf488e548c498e81b42e6c479ab, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: The Bomb!
+    ID: 83
+    Tags: 
+    Price: 4000
+    WeaponType: 4
+    Stats:
+      Attack: 7
+      Defence: 0
+      Speed: 3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 837775d4b0abbe641aff5b67d5dbd3ca, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Bobas Twin
+    ID: 84
+    Tags: 
+    Price: 5000
+    WeaponType: 0
+    Stats:
+      Attack: 1
+      Defence: 10
+      Speed: -3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: ad3b14c7bb0e7e6479d27d59035f8397, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Feather
+    ID: 85
+    Tags: 
+    Price: 350
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 132fd5e79fd525740adf134792299dc8, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Book of Spells
+    ID: 86
+    Tags: '"Magic"'
+    Price: 750
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 5
+    Sprite: {fileID: 21300000, guid: 37312870aa70fd64495583f6673adb9f, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Ice Crystal of Turku
+    ID: 87
+    Tags: '"Magic"'
+    Price: 6000
+    WeaponType: 4
+    Stats:
+      Attack: 6
+      Defence: 3
+      Speed: 3
+      Magic: 7
+    Sprite: {fileID: 21300000, guid: f04d5cba23c6ed747a0dcc233cb309ff, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Fire stone of Oulu
+    ID: 88
+    Tags: '"Magic Fire"'
+    Price: 7500
+    WeaponType: 4
+    Stats:
+      Attack: 7
+      Defence: 3
+      Speed: 10
+      Magic: 6
+    Sprite: {fileID: 21300000, guid: 9f70386cf8345234f8456a1038307fa8, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Bloodfury
+    ID: 89
+    Tags: 
+    Price: 10000
+    WeaponType: 3
+    Stats:
+      Attack: 5
+      Defence: 5
+      Speed: 2
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 1862a6508a5ce714a80c501a65d348b0, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Rock Stone
+    ID: 90
+    Tags: '"Resource"'
+    Price: 5000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 3
+    Sprite: {fileID: 21300000, guid: eb48c5a2c2914be4c90124b8f127f41d, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Fire Stone
+    ID: 91
+    Tags: '"Fire Resource"'
+    Price: 5000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 3
+    Sprite: {fileID: 21300000, guid: f8fbc37243905fb42a52686f673ab2d2, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Fire Tower
+    ID: 92
+    Tags: '"Fire Resource"'
+    Price: 500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c384a25635b49204bb0acb6e86fd0d5d, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Open Fire
+    ID: 93
+    Tags: '"Fire Resource"'
+    Price: 450
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: e888f2d8bfe557c4baf1a48f4baedd6c, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Merlins Hat
+    ID: 94
+    Tags: '"Magic"'
+    Price: 65000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 10
+    Sprite: {fileID: 21300000, guid: c58dd3d6134038749aafd06dd53244e3, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Glass Bottle
+    ID: 95
+    Tags: '"Resource"'
+    Price: 100
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: a28b4cbebd7f8f24db5013810ea573d4, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Big Glass Bottle
+    ID: 96
+    Tags: '"Resource"'
+    Price: 250
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 9993783355bbc9645abe76501f126a45, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Emerald
+    ID: 97
+    Tags: '"Resource Magic"'
+    Price: 35000
+    WeaponType: 4
+    Stats:
+      Attack: 1
+      Defence: 1
+      Speed: 7
+      Magic: 10
+    Sprite: {fileID: 21300000, guid: 10c58161f329bcb4499959af1ead4474, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Key
+    ID: 98
+    Tags: '"Resource"'
+    Price: 1500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 2bf997f8d124dba41969472c86c5e898, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Thunder
+    ID: 99
+    Tags: 
+    Price: 20000
+    WeaponType: 3
+    Stats:
+      Attack: 7
+      Defence: 5
+      Speed: 3
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 7c2816c5da4b48842a25c23f66672839, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Anvil
+    ID: 100
+    Tags: '"Resource"'
+    Price: 5000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: c0c4a9a20dc92f44e8dbaf4f233886c4, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Page
+    ID: 101
+    Tags: '"Resource"'
+    Price: 500
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 0a7bad21d3e8cb34e9e9c8f5969b08e5, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Document
+    ID: 102
+    Tags: '"Resource"'
+    Price: 750
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 3b1476b95993d454dbef0b1108643afe, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Metal Plate
+    ID: 103
+    Tags: '"Resource"'
+    Price: 2000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 24a2c6b18db1d214da0c691626b4d8f2, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Bended Metal
+    ID: 104
+    Tags: '"Resource"'
+    Price: 3000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 19c498e39dbb8fa4f81c76b22b001a3c, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Metal Weight
+    ID: 105
+    Tags: '"Resource"'
+    Price: 5000
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: 848b1b5d50e083b42a9d1b2d7a21adbe, type: 3}
+    Reward:
+      Coins: 0
+      IDsForItem: 
+  - Name: Golden Coin
+    ID: 106
+    Tags: '"Resource"'
+    Price: 0
+    WeaponType: 0
+    Stats:
+      Attack: 0
+      Defence: 0
+      Speed: 0
+      Magic: 0
+    Sprite: {fileID: 21300000, guid: e3fe22e67b111414abf60cfd5f122c8b, type: 3}
+    Reward:
+      Coins: 1000
+      IDsForItem: 
