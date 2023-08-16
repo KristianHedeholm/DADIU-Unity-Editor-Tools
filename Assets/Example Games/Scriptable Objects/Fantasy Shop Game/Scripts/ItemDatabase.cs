@@ -72,10 +72,17 @@ public class ItemDatabase : ScriptableObject
                     Magic = Convert.ToInt32(values[addedIndex + 6]),
                 };
 
+                var spriteName = values[addedIndex + 7];
+
+                var spriteGuids = AssetDatabase.FindAssets($"t:{typeof(Sprite).Name}, {spriteName}, ", new string[] { "Assets/Example Games/Scriptable Objects/Fantasy Shop Game/Graphics/Classic 100" });
+                var spritePath = AssetDatabase.GUIDToAssetPath(spriteGuids[0]);
+                var sprite = AssetDatabase.LoadAssetAtPath(spritePath, typeof(Sprite)) as Sprite;
+                itemData.Sprite = sprite;
+
                 Reward reward = new Reward()
                 {
-                    Coins = Convert.ToInt32(values[addedIndex + 7]),
-                    IDsForItem = values[addedIndex + 8]
+                    Coins = Convert.ToInt32(values[addedIndex + 8]),
+                    IDsForItem = values[addedIndex + 9]
                 };
 
                 itemData.Stats = stats;
@@ -96,8 +103,8 @@ public struct ItemData
     public int Price;
     public WeaponType WeaponType;
     public Stats Stats;
-    public Reward Reward;
     public Sprite Sprite;
+    public Reward Reward;
 }
 
 public enum WeaponType
