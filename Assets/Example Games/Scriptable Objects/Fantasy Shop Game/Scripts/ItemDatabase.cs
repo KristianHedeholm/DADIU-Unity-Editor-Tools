@@ -42,7 +42,6 @@ public class ItemDatabase : ScriptableObject
                 ItemData itemData = new ItemData();
                 itemData.Name = values[0];
                 itemData.ID = Convert.ToInt32(values[1]);
-                Debug.Log(itemData.ID);
 
                 var addedIndex = 2;
                 var tags = values[addedIndex];
