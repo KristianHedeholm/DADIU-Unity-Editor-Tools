@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3d5948af46b5a4281a249f3fcb6d3a, type: 3}
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
-  _items:
+  Items:
   - Name: Dogs Best Friend
     ID: 1
     Tags: '"Bone Resource"'

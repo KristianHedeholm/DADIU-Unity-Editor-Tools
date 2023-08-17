@@ -6,11 +6,13 @@ public class ItemDatabaseCustomInspector : Editor
 {
     private bool _useDefaultInspector = true;
 
-    private SerializedProperty _items;
+    private SerializedProperty Items;
+    private ItemDatabase _target;
 
     private void OnEnable()
     {
-        _items = serializedObject.FindProperty("_items");
+        Items = serializedObject.FindProperty("Items");
+        _target = target as ItemDatabase;
     }
 
     public override void OnInspectorGUI()
@@ -23,6 +25,6 @@ public class ItemDatabaseCustomInspector : Editor
             return;
         }
 
-        EditorGUILayout.PropertyField(_items);
+        EditorGUILayout.PropertyField(Items);
     }
 }

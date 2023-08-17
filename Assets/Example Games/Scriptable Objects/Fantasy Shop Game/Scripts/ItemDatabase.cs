@@ -8,12 +8,12 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "ItemDatabase", menuName = "Scriptable Objects/Item Database")]
 public class ItemDatabase : ScriptableObject
 {
-    public ItemData[] _items;
+    public ItemData[] Items;
 
     [ContextMenu("Load CSV File")]
     private void LoadDataBaseFromCSVFile()
     {
-        _items = new ItemData[0];
+        Items = new ItemData[0];
 
         var guids = AssetDatabase.FindAssets($"t:{typeof(TextAsset).Name}, items, ", new string[] { "Assets/" });
         var path = AssetDatabase.GUIDToAssetPath(guids[0]);
@@ -94,7 +94,7 @@ public class ItemDatabase : ScriptableObject
                 listOfItems.Add(itemData);
             }
         }
-        _items = listOfItems.ToArray();
+        Items = listOfItems.ToArray();
     }
 }
 
