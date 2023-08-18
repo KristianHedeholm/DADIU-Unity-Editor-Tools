@@ -13,6 +13,7 @@ public class ItemDatabaseCustomInspector : Editor
 
     private string _seacrhName;
     private string _seacrhTags;
+    private WeaponType _seacrhWeaponType = WeaponType.None;
 
     private void OnEnable()
     {
@@ -45,10 +46,16 @@ public class ItemDatabaseCustomInspector : Editor
 
         GUILayout.Space(5);
 
-        if(GUILayout.Button("Reset"))
+        _seacrhWeaponType = (WeaponType)EditorGUILayout.EnumPopup("Search for Weapon Type", _seacrhWeaponType);
+
+        GUILayout.Space(5);
+
+
+        if (GUILayout.Button("Reset"))
         {
             _seacrhName = string.Empty;
             _seacrhTags = string.Empty;
+            _seacrhWeaponType = WeaponType.None;
         }
 
         GUILayout.Space(15);
@@ -61,6 +68,7 @@ public class ItemDatabaseCustomInspector : Editor
 
             _itemDataList = GetItemsBasedOnNameSearch(_seacrhName, _itemDataList);
             _itemDataList = GetItemsBasedOnTagsSearch(_seacrhTags, _itemDataList);
+            _itemDataList = GetItemsBasedOnWeaponTypeSearch(_seacrhWeaponType, _itemDataList);
 
             foreach (var item in _itemDataList)
             {
@@ -99,6 +107,24 @@ public class ItemDatabaseCustomInspector : Editor
         foreach (var item in inputValue)
         {
             if (item.Tags.Contains(tags))
+            {
+                newList.Add(item);
+            }
+        }
+        return newList;
+    }
+
+    private List<ItemData> GetItemsBasedOnWeaponTypeSearch(WeaponType weaponType, List<ItemData> inputValue)
+    {
+        if (weaponType == WeaponType.None)
+        {
+            return inputValue;
+        }
+
+        var newList = new List<ItemData>();
+        foreach (var item in inputValue)
+        {
+            if (item.WeaponType == weaponType)
             {
                 newList.Add(item);
             }
