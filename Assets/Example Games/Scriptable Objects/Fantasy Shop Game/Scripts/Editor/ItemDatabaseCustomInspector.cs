@@ -62,7 +62,7 @@ public class ItemDatabaseCustomInspector : Editor
 
 
 
-        if(GUILayout.Button("Search"))
+        if(GUILayout.Button("Update List based on Search Filter"))
         {
             ResetToFullList();
 
