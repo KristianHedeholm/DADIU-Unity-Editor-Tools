@@ -90,7 +90,6 @@ public class ItemDatabaseCustomInspector : Editor
             if(item.Name.Contains(name))
             {
                 newList.Add(item);
-                Debug.Log(item.Name);
             }
         }
         return newList;
