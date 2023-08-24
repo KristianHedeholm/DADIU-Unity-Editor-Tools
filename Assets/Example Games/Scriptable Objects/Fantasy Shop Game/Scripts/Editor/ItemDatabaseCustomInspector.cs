@@ -122,9 +122,7 @@ public class ItemDatabaseCustomInspector : Editor
 
     private void DrawItem(ref ItemData item)
     {
-        var name = item.Name;
-        name = EditorGUILayout.TextField("Name: ", name);
-        item.Name = name;
+        item.Name = EditorGUILayout.TextField("Name: ", item.Name);
     }
 
     private List<ItemData> GetItemsBasedOnNameSearch(string name, List<ItemData> inputValue)
