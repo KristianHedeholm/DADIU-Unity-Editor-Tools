@@ -76,11 +76,11 @@ public class ItemDatabaseCustomInspector : Editor
             _seacrhWeaponType = WeaponType.None;
             _minimumRangeValue = _minimumPrice;
             _maximumRangeValue = _maximimumPrice;
+
+            ResetToFullList();
         }
 
         GUILayout.Space(15);
-
-
 
         if(GUILayout.Button("Update List based on Search Filter"))
         {
@@ -89,13 +89,42 @@ public class ItemDatabaseCustomInspector : Editor
             _itemDataList = GetItemsBasedOnNameSearch(_seacrhName, _itemDataList);
             _itemDataList = GetItemsBasedOnTagsSearch(_seacrhTags, _itemDataList);
             _itemDataList = GetItemsBasedOnWeaponTypeSearch(_seacrhWeaponType, _itemDataList);
-            _itemDataList = GetITemsBasedOnPriceRange(_minimumRangeValue, _maximumRangeValue, _itemDataList);
+            _itemDataList = GetItemsBasedOnPriceRange(_minimumRangeValue, _maximumRangeValue, _itemDataList);
+        }
 
-            foreach (var item in _itemDataList)
+        GUILayout.Space(10);
+
+        if(GUILayout.Button("Save changes"))
+        {
+            for (int itemIndex = 0; itemIndex < _itemDataList.Count; itemIndex++)
             {
-                Debug.Log(item.Name);
+                for (int itemDataIndex = 0; itemDataIndex < _target.Items.Length; itemDataIndex++)
+                {
+                    if(_target.Items[itemDataIndex].ID == _itemDataList[itemIndex].ID)
+                    {
+                        _target.Items[itemDataIndex] = _itemDataList[itemIndex];
+                    }
+                }
             }
         }
+
+
+        EditorGUILayout.LabelField("Item Database:");
+
+
+        for (int i = 0; i < _itemDataList.Count; i++)
+        {
+            var item = _itemDataList[i];
+            DrawItem(ref item);
+            _itemDataList[i] = item;
+        }
+    }
+
+    private void DrawItem(ref ItemData item)
+    {
+        var name = item.Name;
+        name = EditorGUILayout.TextField("Name: ", name);
+        item.Name = name;
     }
 
     private List<ItemData> GetItemsBasedOnNameSearch(string name, List<ItemData> inputValue)
@@ -152,7 +181,7 @@ public class ItemDatabaseCustomInspector : Editor
         return newList;
     }
 
-    private List<ItemData> GetITemsBasedOnPriceRange(float minimumValue, float maximumValue, List<ItemData> inputValue)
+    private List<ItemData> GetItemsBasedOnPriceRange(float minimumValue, float maximumValue, List<ItemData> inputValue)
     {
         var newList = new List<ItemData>();
         foreach (var item in inputValue)
