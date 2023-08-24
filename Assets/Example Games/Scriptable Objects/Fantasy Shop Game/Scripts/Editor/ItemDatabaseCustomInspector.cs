@@ -123,6 +123,28 @@ public class ItemDatabaseCustomInspector : Editor
     private void DrawItem(ref ItemData item)
     {
         item.Name = EditorGUILayout.TextField("Name: ", item.Name);
+        item.Tags = EditorGUILayout.TextField("Tags: ", item.Tags);
+        item.Price = EditorGUILayout.IntField("Price: ", item.Price);
+        item.WeaponType = (WeaponType)EditorGUILayout.EnumPopup("Weapon Type: ", item.WeaponType);
+
+        EditorGUILayout.LabelField("Stats");
+
+        EditorGUI.indentLevel++;
+        
+        var stats = item.Stats;
+        stats.Attack = EditorGUILayout.IntField("Attack: ", stats.Attack);
+        stats.Defence = EditorGUILayout.IntField("Defence: ", stats.Defence);
+        stats.Speed = EditorGUILayout.IntField("Speed: ", stats.Speed);
+        stats.Magic = EditorGUILayout.IntField("Magic: ", stats.Magic);
+        item.Stats = stats;
+
+        EditorGUI.indentLevel--;
+
+        GUILayout.Space(10);
+
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+
+        GUILayout.Space(10);
     }
 
     private List<ItemData> GetItemsBasedOnNameSearch(string name, List<ItemData> inputValue)
