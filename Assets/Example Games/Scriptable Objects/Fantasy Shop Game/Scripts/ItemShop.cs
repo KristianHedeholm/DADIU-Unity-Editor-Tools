@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class ItemShop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ShowShop()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("Show Shop");
     }
 }

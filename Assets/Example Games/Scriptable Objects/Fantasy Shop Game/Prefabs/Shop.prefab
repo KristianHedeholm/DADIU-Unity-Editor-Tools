@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8882758693934904048}
   - component: {fileID: 8882758693934904055}
+  - component: {fileID: 5801807852758061023}
   - component: {fileID: 8882758693934904054}
   m_Layer: 0
   m_Name: Shop
@@ -31,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8882758693934904055
 SpriteRenderer:
@@ -85,6 +86,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5801807852758061023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882758693934904053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13b7a27b1330e74a93410ded2996292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &8882758693934904054
 BoxCollider2D:
   m_ObjectHideFlags: 0

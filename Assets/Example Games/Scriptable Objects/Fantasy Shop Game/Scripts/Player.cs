@@ -16,6 +16,8 @@ namespace ExampleGames.ScriptableObjects.FantasyShopGame
         private float _rightBound;
 
         private Transform _transform;
+        private bool _isInsideShop = false;
+        private ItemShop _currentVisitingShop;
 
         private void Awake()
         {
@@ -44,11 +46,31 @@ namespace ExampleGames.ScriptableObjects.FantasyShopGame
             {
                 _transform.Translate(Vector3.right * Time.deltaTime * _speed, Space.World);
             }
+
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                if(_isInsideShop)
+                {
+                    _currentVisitingShop.ShowShop();
+                }
+            }
         }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collider)
+        {;
+            if(collider.TryGetComponent<ItemShop>(out var itemShop))
+            {
+                _isInsideShop = true;
+                _currentVisitingShop = itemShop;
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collider)
         {
-            Debug.Log("hej");
+            if (collider.TryGetComponent<ItemShop>(out var itemShop))
+            {
+                _isInsideShop = false;
+            }
         }
     }
 }
