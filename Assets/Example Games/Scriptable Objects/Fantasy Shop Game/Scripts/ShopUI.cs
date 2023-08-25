@@ -8,6 +8,9 @@ public class ShopUI : MonoBehaviour
     public static ShopUI Instance;
 
     [SerializeField]
+    private GameObject _content;
+
+    [SerializeField]
     private Text _shopName;
 
     [SerializeField]
