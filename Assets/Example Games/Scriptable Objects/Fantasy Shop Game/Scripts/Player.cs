@@ -45,6 +45,11 @@ namespace ExampleGames.ScriptableObjects.FantasyShopGame
                 _transform.Translate(Vector3.right * Time.deltaTime * _speed, Space.World);
             }
         }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            Debug.Log("hej");
+        }
     }
 }
 
