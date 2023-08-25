@@ -8,6 +8,8 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "ItemDatabase", menuName = "Scriptable Objects/Item Database")]
 public class ItemDatabase : ScriptableObject
 {
+    public const int MaximumPrice = 150000;
+
     public ItemData[] Items;
 
     [ContextMenu("Load CSV File")]

@@ -19,7 +19,7 @@ public class ItemShopData : ScriptableObject
     [SerializeField]
     private int MinimumPrize;
     [SerializeField]
-    private int MaximumPrice;
+    private int MaximumPrice = ItemDatabase.MaximumPrice;
     [SerializeField]
     private bool _useRandomItems;
     
@@ -42,5 +42,14 @@ public class ItemShopData : ScriptableObject
             }
         }
         return itemList.ToArray();
+    }
+
+    [ContextMenu("Reset Values")]
+    void Reset()
+    {
+        Tags = null;
+        WeaponType = WeaponType.None;
+        MinimumPrize = 0;
+        MaximumPrice = ItemDatabase.MaximumPrice;
     }
 }

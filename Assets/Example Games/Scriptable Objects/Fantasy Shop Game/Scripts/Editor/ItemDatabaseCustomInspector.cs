@@ -15,7 +15,7 @@ public class ItemDatabaseCustomInspector : Editor
     private string _seacrhTags;
     private WeaponType _seacrhWeaponType = WeaponType.None;
     private const float _minimumPrice = 0.0f;
-    private const float _maximimumPrice = 150000.0f;
+    private const float _maximimumPrice = ItemDatabase.MaximumPrice;
     private float _minimumRangeValue = _minimumPrice;
     private float _maximumRangeValue = _maximimumPrice;
 
