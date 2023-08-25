@@ -58,6 +58,11 @@ public static class ItemDataListExtensions
 
     public static List<ItemData> GetItemsBasedOnPriceRange(this List<ItemData> inputValue, float minimumValue, float maximumValue)
     {
+        if(minimumValue == maximumValue || maximumValue == 0)
+        {
+            return inputValue;
+        }
+
         var newList = new List<ItemData>();
         foreach (var item in inputValue)
         {

@@ -1,11 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemShop : MonoBehaviour
 {
+    [SerializeField]
+    private ItemShopData _itemShopData;
+
+    [SerializeField]
+    private ItemData[] _cachedItems;
+
+    private void Awake()
+    {
+        if(_itemShopData == null)
+        {
+            Debug.LogError("Error: No ItemShop Data assigned");
+        }
+        _cachedItems = _itemShopData.GetShopItems();
+
+    }
+
+
     public void ShowShop()
     {
-        Debug.Log("Show Shop");
+        ShopUI.Instance.SetShopName(_itemShopData.ShopName);
+        ShopUI.Instance.ShowUIShop(_cachedItems);
     }
 }

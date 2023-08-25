@@ -27,22 +27,22 @@ namespace ExampleGames.ScriptableObjects.FantasyShopGame
         private void Update()
         {
             var position = _transform.position;
-            if (Input.GetKey(KeyCode.W) && position.y < _upperBound)
+            if (Input.GetKey(KeyCode.W) || (Input.GetKey(KeyCode.UpArrow) && position.y < _upperBound))
             {
                 _transform.Translate(Vector3.up * Time.deltaTime * _speed, Space.World);
             }
 
-            if (Input.GetKey(KeyCode.S) && position.y > _lowerBound)
+            if (Input.GetKey(KeyCode.S) || (Input.GetKey(KeyCode.DownArrow) && position.y > _lowerBound))
             {
                 _transform.Translate(Vector3.down * Time.deltaTime * _speed, Space.World);
             }
 
-            if (Input.GetKey(KeyCode.A) && position.x > _leftBound)
+            if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.LeftArrow) && position.x > _leftBound))
             {
                 _transform.Translate(Vector3.left * Time.deltaTime * _speed, Space.World);
             }
 
-            if (Input.GetKey(KeyCode.D) && position.x < _rightBound)
+            if (Input.GetKey(KeyCode.D) || (Input.GetKey(KeyCode.RightArrow) && position.x < _rightBound))
             {
                 _transform.Translate(Vector3.right * Time.deltaTime * _speed, Space.World);
             }
