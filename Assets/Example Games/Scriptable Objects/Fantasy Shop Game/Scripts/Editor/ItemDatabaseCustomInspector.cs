@@ -86,10 +86,11 @@ public class ItemDatabaseCustomInspector : Editor
         {
             ResetToFullList();
 
-            _itemDataList = GetItemsBasedOnNameSearch(_seacrhName, _itemDataList);
-            _itemDataList = GetItemsBasedOnTagsSearch(_seacrhTags, _itemDataList);
-            _itemDataList = GetItemsBasedOnWeaponTypeSearch(_seacrhWeaponType, _itemDataList);
-            _itemDataList = GetItemsBasedOnPriceRange(_minimumRangeValue, _maximumRangeValue, _itemDataList);
+            _itemDataList = _itemDataList
+                .GetItemsBasedOnNameSearch(_seacrhName)
+                .GetItemsBasedOnTagsSearch(_seacrhTags)
+                .GetItemsBasedOnWeaponTypeSearch(_seacrhWeaponType)
+                .GetItemsBasedOnPriceRange(_minimumRangeValue, _maximumRangeValue);
         }
 
         GUILayout.Space(10);
@@ -145,72 +146,5 @@ public class ItemDatabaseCustomInspector : Editor
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
 
         GUILayout.Space(10);
-    }
-
-    private List<ItemData> GetItemsBasedOnNameSearch(string name, List<ItemData> inputValue)
-    {
-        if(string.IsNullOrEmpty(name))
-        {
-            return inputValue;
-        }
-
-        var newList = new List<ItemData>();
-        foreach (var item in inputValue)
-        {
-            if(item.Name.Contains(name))
-            {
-                newList.Add(item);
-            }
-        }
-        return newList;
-    }
-
-    private List<ItemData> GetItemsBasedOnTagsSearch(string tags, List<ItemData> inputValue)
-    {
-        if (string.IsNullOrEmpty(tags))
-        {
-            return inputValue;
-        }
-
-        var newList = new List<ItemData>();
-        foreach (var item in inputValue)
-        {
-            if (item.Tags.Contains(tags))
-            {
-                newList.Add(item);
-            }
-        }
-        return newList;
-    }
-
-    private List<ItemData> GetItemsBasedOnWeaponTypeSearch(WeaponType weaponType, List<ItemData> inputValue)
-    {
-        if (weaponType == WeaponType.None)
-        {
-            return inputValue;
-        }
-
-        var newList = new List<ItemData>();
-        foreach (var item in inputValue)
-        {
-            if (item.WeaponType == weaponType)
-            {
-                newList.Add(item);
-            }
-        }
-        return newList;
-    }
-
-    private List<ItemData> GetItemsBasedOnPriceRange(float minimumValue, float maximumValue, List<ItemData> inputValue)
-    {
-        var newList = new List<ItemData>();
-        foreach (var item in inputValue)
-        {
-            if (minimumValue <= item.Price && item.Price <= maximumValue)
-            {
-                newList.Add(item);
-            }
-        }
-        return newList;
     }
 }
