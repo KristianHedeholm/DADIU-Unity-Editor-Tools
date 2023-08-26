@@ -12,6 +12,11 @@ public class ItemDatabase : ScriptableObject
 
     public ItemData[] Items;
 
+    // This approach is not 100% bullet proof. For example this don't allow having commas in the names of the items.
+    // It would be nice to find an elegant solution that can handle situations like that in a smart way.
+    // A possible sultion: Create a list and if the dataValue don't contain a ' " ' we just add it right away to the list.
+    // If the dataValue contsins a ' " ' in the first spot, we keep adding entries to we find a corrasponding ' " ' character.
+    // Afterwards we can remove the ' " * from the string. This should now only contain the values we actually need.
     [ContextMenu("Load CSV File")]
     private void LoadDataBaseFromCSVFile()
     {
