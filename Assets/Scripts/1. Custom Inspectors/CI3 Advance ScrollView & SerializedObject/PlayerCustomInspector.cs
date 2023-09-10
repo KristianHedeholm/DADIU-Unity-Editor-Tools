@@ -103,9 +103,8 @@ namespace Examples.CustomInspectors.CI3
      * GUILayout.Width: https://docs.unity3d.com/ScriptReference/GUILayout.Width.html
      * 
      * SerializedProperty.InsertArrayElementAtIndex: https://docs.unity3d.com/ScriptReference/SerializedProperty.InsertArrayElementAtIndex.html
-     * SerializedObject.ApplyModifiedProperties: https://docs.unity3d.com/ScriptReference/SerializedObject.ApplyModifiedProperties.html
-     * 
      * Editor.CreateEditor: https://docs.unity3d.com/ScriptReference/Editor.CreateEditor.html
+     * 
      * EditorGUILayout.HelpBox: https://docs.unity3d.com/ScriptReference/EditorGUILayout.HelpBox.html
      * 
      * See also:

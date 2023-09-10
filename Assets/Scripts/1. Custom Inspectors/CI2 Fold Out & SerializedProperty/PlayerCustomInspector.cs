@@ -18,15 +18,16 @@ namespace Examples.CustomInspectors.CI2
             Health = serializedObject.FindProperty("Health");
             armo = serializedObject.FindProperty("armo");
 
-            numberOfGuns = serializedObject.FindProperty("numberOfGuns"); // this will not work since the field is not Serialized in the Player class!
+            // numberOfGuns = serializedObject.FindProperty("numberOfGuns"); // this will not work since the field is not Serialized in the Player class!
         }
 
         public override void OnInspectorGUI()
         {
+            serializedObject.Update();
             showHealth = EditorGUILayout.Foldout(showHealth, "Show Health");
             if(showHealth)
             {
-                EditorGUILayout.IntField("Health", Health.intValue);
+                Health.intValue = EditorGUILayout.IntField("Health", Health.intValue);
             }
 
             showArmo = EditorGUILayout.Foldout(showArmo, "Show Armo");
@@ -36,7 +37,9 @@ namespace Examples.CustomInspectors.CI2
             }
 
             // this will not work since the field is not Serialized in the Player class!
-            EditorGUILayout.PropertyField(numberOfGuns);
+            // EditorGUILayout.PropertyField(numberOfGuns);
+
+            serializedObject.ApplyModifiedProperties();
         }
     }
 
@@ -46,9 +49,12 @@ namespace Examples.CustomInspectors.CI2
      * SerializedProperty: https://docs.unity3d.com/ScriptReference/SerializedProperty.html
      * 
      * SerializedObject.FindProperty: https://docs.unity3d.com/ScriptReference/SerializedObject.FindProperty.html
-     * EditorGUILayout.Foldout: https://docs.unity3d.com/ScriptReference/EditorGUILayout.Foldout.html
+     * SerializedObject.Update: https://docs.unity3d.com/ScriptReference/SerializedObject.Update.html
      * 
+     * EditorGUILayout.Foldout: https://docs.unity3d.com/ScriptReference/EditorGUILayout.Foldout.html
      * EditorGUILayout.IntField: https://docs.unity3d.com/ScriptReference/EditorGUILayout.IntField.html
+     * 
      * EditorGUILayout.PropertyField: https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html
+     * SerializedObject.ApplyModifiedProperties: https://docs.unity3d.com/ScriptReference/SerializedObject.ApplyModifiedProperties.html
      */
 }
