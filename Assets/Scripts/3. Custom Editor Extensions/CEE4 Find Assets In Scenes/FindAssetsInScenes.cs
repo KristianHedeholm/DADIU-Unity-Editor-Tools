@@ -96,10 +96,11 @@ namespace Examples.CustomEditorExtensions.CEE4
 
             if(GUILayout.Button("Find Rare Items In Scene"))
             {
-                rareItems = FindObjectsOfType<RareItem>();
+                rareItems = FindObjectsByType<RareItem>(FindObjectsSortMode.InstanceID);
                 if(rareItems.Length == 0)
                 {
                     Debug.Log("No Rare Items found");
+                    return;
                 }
 
                 rareItemIndex = 0;
