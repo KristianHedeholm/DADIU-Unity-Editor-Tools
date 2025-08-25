@@ -4,7 +4,7 @@ namespace Examples.ScriptableObjects.SO3
     using UnityEditor;
 
     [CustomEditor(typeof(HealthDataScriptableObject))]
-    public class NewBehaviourScript : Editor
+    public class HealthDataScriptableObjectCustomInspector : Editor
     {
         public override void OnInspectorGUI()
         {
