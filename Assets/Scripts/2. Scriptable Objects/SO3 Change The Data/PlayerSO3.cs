@@ -17,7 +17,7 @@ namespace Examples.ScriptableObjects.SO3
 
             if(Input.GetKeyDown(KeyCode.D))
             {
-                Debug.Log("I took damae!");
+                Debug.Log("I took damage!");
                 healthData.TakeDamage(1);
             }
 
