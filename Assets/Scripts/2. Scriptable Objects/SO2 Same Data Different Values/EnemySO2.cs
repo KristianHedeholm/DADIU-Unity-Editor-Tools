@@ -2,31 +2,20 @@ namespace Examples.ScriptableObjects.SO2
 {
     using UnityEngine;
 
-    public enum EnemyType
-    {
-        Goblin,
-        Orc,
-        Demon,
-    }
 
     public class EnemySO2 : MonoBehaviour
     {
-        private EnemyType enemyType;
-        private int attackPower;
-        private int health;
+        private EnemyData enemyData;
 
         [SerializeField]
-        private EnemyDataScriptableObject enemyData;
+        private EnemyDataScriptableObject enemyDataScriptableObject;
 
         private void Awake()
         {
-            if(enemyData != null)
+            if(enemyDataScriptableObject != null)
             {
-                enemyType = enemyData.EnemyType;
-                attackPower = enemyData.AttackPower;
-                health = enemyData.Health;
-
-                Debug.Log($"Hi I'm a {enemyType.ToString()} and I give {attackPower} damge and have {health} in health");
+				enemyData = enemyDataScriptableObject.EnemyData;
+				Debug.Log($"Hi I'm a {enemyData.EnemyType} and I give {enemyData.AttackPower} damge and have {enemyData.Health} in health");
             }
             else
             {

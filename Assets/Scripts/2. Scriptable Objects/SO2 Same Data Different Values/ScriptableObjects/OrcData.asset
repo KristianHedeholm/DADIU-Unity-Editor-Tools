@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b162015bdd652742ab64b624abc606f, type: 3}
   m_Name: OrcData
   m_EditorClassIdentifier: 
-  EnemyType: 1
-  AttackPower: 5
-  Health: 10
+  EnemyData:
+    EnemyType: 1
+    AttackPower: 5
+    Health: 10
