@@ -51,41 +51,42 @@ namespace Examples.CustomEditorExtensions.CEE4
             switch (state)
             {
                 case UnityEditor.PlayModeStateChange.EnteredEditMode:
-                    currentState = "You are in edit mode";
+                    currentState = "You are in EDIT mode";
                     break;
 
                 case UnityEditor.PlayModeStateChange.ExitingEditMode:
                     break;
 
                 case UnityEditor.PlayModeStateChange.EnteredPlayMode:
-                    currentState = "You are in play mode";
+                    currentState = "You are in PLAY mode";
                     break;
 
                 case UnityEditor.PlayModeStateChange.ExitingPlayMode:
                     break;
             }
-        }
+            Repaint();
+		}
 
         private void OnGUI()
         {
             EditorGUILayout.LabelField("Scenes In Project: ");
             scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition, GUILayout.Height(150));
+
             foreach (KeyValuePair<string, string> sceneItem in scenes)
             {
                 if(GUILayout.Button($"Open {sceneItem.Key}"))
                 {
-                    if (EditorApplication.isPlaying)
-                    {
-                        return;
-                    }
+                    var canOpenResult = CanOpenSceneWithMessage();
 
-                    if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+					if (canOpenResult.Value)
                     {
-                        return;
+						showNextButton = false;
+						EditorSceneManager.OpenScene(sceneItem.Value);
+					}
+                    else
+                    {
+                        Debug.Log(canOpenResult.ErrorMessage);
                     }
-
-                    showNextButton = false;
-                    EditorSceneManager.OpenScene(sceneItem.Value);
                 }
 
                 EditorGUILayout.Space(10);
@@ -123,6 +124,21 @@ namespace Examples.CustomEditorExtensions.CEE4
 
             EditorGUILayout.LabelField(currentState);
         }
+
+        private (bool Value, string ErrorMessage) CanOpenSceneWithMessage()
+        {
+			if (EditorApplication.isPlaying)
+			{
+				return (false, "Can't open scene while in playmode");
+			}
+
+			if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+			{
+				return (false, "Cancelled Scene change because of unsaved changes");
+			}
+
+            return (true, string.Empty);
+		}
 
         private void HighlightGameObject(int index)
         {
