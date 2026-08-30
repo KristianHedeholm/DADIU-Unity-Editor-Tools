@@ -12,6 +12,7 @@ namespace Examples.CustomInspectors.CI3
 
         private void OnEnable()
         {
+            serializedObject.Update();
             Inventory = serializedObject.FindProperty("Inventory");
         }
 
@@ -56,7 +57,13 @@ namespace Examples.CustomInspectors.CI3
             {
                 AddIventoryItem(Texture2D.whiteTexture, "this is a test", 9001);
             }
-        }
+
+			if (GUILayout.Button("Remove All Iventory Items"))
+			{
+                Inventory.arraySize = 0;
+				Inventory.serializedObject.ApplyModifiedProperties();
+			}
+		}
 
         public void AddIventoryItem(Texture2D preview, string description, int cost)
         {
